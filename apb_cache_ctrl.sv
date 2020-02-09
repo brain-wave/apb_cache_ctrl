@@ -19,7 +19,7 @@ module apb_cache_ctrl
     output logic                      PREADY,
     output logic                      PSLVERR,
     
-    PRI_ICACHE_CTRL_UNIT_BUS.Master   IC_ctrl_unit_master_if[NUM_CORES]
+    PRI_ICACHE_CTRL_UNIT_BUS.Master   IC_ctrl_unit_master_if[1] // for some reason this doesnt work: [NUM_CORES]
 );
 
     XBAR_PERIPH_BUS    speriph();    
