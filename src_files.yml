@@ -1,4 +1,7 @@
 apb_cache_ctrl:
+  incdirs: [
+    ../../../rtl/includes
+  ]
   files: [
     apb_cache_ctrl.sv,
     pri_icache_ctrl_unit.sv
